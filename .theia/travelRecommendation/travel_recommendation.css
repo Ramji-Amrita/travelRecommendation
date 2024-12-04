@@ -1,0 +1,342 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Playwrite IT Moderna', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+nav ul li a:hover {
+    color: #ff9900;
+}
+
+/* Logo Container Styling */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;  /* Adjust logo size */
+    height: 40px; /* Adjust logo size */
+    margin-right: 10px; /* Space between logo and text */
+}
+
+.brand-name {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Slider Styling */
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    width: 300%; /* Since there are 3 slides */
+    transition: transform 1s ease-in-out; /* Smooth transition */
+}
+
+.slide {
+    width: 100%;
+    height: 500px;
+    position: relative; /* To position description on top */
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Description Styling */
+.slide-description {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 8px;
+    width: 97%;
+}
+
+.slide-description h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.slide-description p {
+    font-size: 16px;
+}
+
+/* Main Content */
+.content {
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* Search Bar Styling */
+/* Style for the search bar */
+nav .search-bar {
+    display: flex;
+    align-items: center;
+}
+
+nav .search-bar input {
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    margin-right: 10px;
+    font-size: 16px;
+    width: 200px;
+}
+
+nav .search-bar button {
+    padding: 8px 16px;
+    background-color: #ff7f50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    margin: 0 5px;
+}
+
+nav .search-bar button:hover {
+    background-color: #e67e22;
+}
+nav .search-bar button.reset:hover {
+    background: #4CAF50;
+}
+nav .search-bar button.reset {
+    background: green;
+}
+
+/* Background Image Section */
+.background-image {
+    background-image: url('https://via.placeholder.com/1200x600'); /* Placeholder Image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.background-image h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.background-image p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* Button Styling */
+.btn {
+    background-color: #ff9900;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #ff6600;
+}
+
+/* Social Media Links Styling */
+.social-links {
+    margin-top: 30px;
+}
+
+.social-links a {
+    color: #333;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #ff9900;
+}
+
+/* Destination Cards Styling */
+section#destinations {
+    margin: 50px;
+    text-align: center;
+}
+
+#destination-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.destination-card {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    text-align: center;
+}
+
+.destination-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.destination-card .destination-info {
+    padding: 15px;
+}
+
+.destination-card .destination-info h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.destination-card .destination-info p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* About Us Page Styling */
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-top: 30px;
+}
+
+/* Contact Us Form Styling */
+form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form label {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #ff6600;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .destination-card {
+        width: 100%;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .background-image {
+        padding: 60px 20px;
+    }
+
+    .search-container {
+        margin-bottom: 20px;
+    }
+}

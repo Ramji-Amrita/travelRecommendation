@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TravelBloom</title>
+
+<!-- Google Fonts (Playwright IT Moderna) -->
+<link
+	href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap"
+	rel="stylesheet">
+
+<!-- Font Awesome CDN Link -->
+<link
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+	rel="stylesheet">
+
+<!-- Link to external CSS file -->
+<link rel="stylesheet" href="travel_recommendation.css">
+</head>
+<body>
+
+	<!-- Navigation Bar -->
+	<nav>
+		<div class="logo-container">
+			<img src="images/logo.png" alt="TravelBloom Logo" class="logo">
+			<!-- Replace with your logo image -->
+			<span class="brand-name">TravelBloom</span>
+		</div>
+		<ul>
+			<li><a href="travel_recommendation.html">Home</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+		</ul>
+		  <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search destinations...">
+            <button id="search-button" onclick="doSearch()">Search</button>
+            <button id="reset-button" class="reset" onclick="resetSearch()">Reset</button>
+        </div>
+	</nav>
+
+	<!-- Main Content -->
+	<div class="content">
+		<!-- <div class="search-container">
+			<input type="text" id="search"
+				placeholder="Search for destinations..." />
+			<button onclick="searchDestinations()">Search</button>
+		</div> -->
+		<div>
+
+			<div class="slider">
+				<div class="slides">
+					<div class="slide">
+						<img src="images/bg1.jpg" alt="Travel Destination 1">
+						<div class="slide-description">
+							<h2>Explore the World</h2>
+							<p>Discover unique travel destinations, experience different
+								cultures, and create unforgettable memories.</p>
+							<a href="#" class="btn">Book Now</a>
+						</div>
+					</div>
+					<div class="slide">
+						<img src="images/bg2.jpg" alt="Travel Destination 2">
+						<div class="slide-description">
+							<h2>Adventure Awaits</h2>
+							<p>Embark on thrilling adventures with TravelBloom. From
+								relaxing beaches to majestic mountains, find your next journey.</p>
+							<a href="#" class="btn">Book Now</a>
+						</div>
+					</div>
+					<div class="slide">
+						<img src="images/bg3.jpg" alt="Travel Destination 3">
+						<div class="slide-description">
+							<h2>Your Next Destination</h2>
+							<p>Plan your next vacation with TravelBloom. Our platform
+								helps you explore the best destinations around the world.</p>
+							<a href="#" class="btn">Book Now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Display Travel Destinations -->
+		<section id="destinations">
+			<h2>Explore Travel Destinations</h2>
+			<div id="destination-container"></div>
+		</section>
+
+		<!-- Social Media Links -->
+		<div class="social-links">
+			<a href="https://www.facebook.com" target="_blank"><i
+				class="fa-brands fa-facebook"></i></a> <a href="https://www.twitter.com"
+				target="_blank"><i class="fa-brands fa-twitter"></i></a> <a
+				href="https://www.instagram.com" target="_blank"><i
+				class="fa-brands fa-instagram"></i></a>
+		</div>
+	</div>
+
+	<!-- External JS file -->
+	<script src="travel_recommendation.js"></script>
+	<footer>
+		<p>&copy; 2024 TravelBloom. All Rights Reserved.</p>
+	</footer>
+</body>
+</html>
